@@ -1,0 +1,31 @@
+body{
+    font-family: "Lucida Handwriting";
+    vertical-align: top;
+    background: lightseagreen;
+    text-align: center;
+}
+
+button {
+    width: 60px;
+    color: green;
+}
+
+#nameField{
+    position: relative;
+    top: 250px;
+}
+
+.fontLarge{
+    font-size: 16px;
+}
+
+p.center {
+    text-align: center;
+    color: dodgerblue;
+}
+
+h1, h2, p {
+    text-align: right;
+    text-weight: bold;
+}
+

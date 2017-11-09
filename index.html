@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta charset="UTF-8">
     <title>My Horoscope</title>
     <script src ="script.js"></script>
+    <link rel="stylesheet" href="style.css"/>
 </head>
-<body onload="days_in_month()">
+<body>
+<div id="nameField">
+    What is your name?
+    <input type="text" id="name" value="" size="25">
 What month were you born?
-<select id=month()>
+<select id="month" onchange="days_in_month(this.value)">
     <option value="0">select month</option>
     <option value="1">January</option>
     <option value="2">February</option>
@@ -24,9 +29,13 @@ What month were you born?
 
 What day were you born?
 <select id="day">
-
+    <option>select day</option>
 </select>
 
-<button id = "submit" onclick = "onSubmit()">submit</button>
+<button id="submit" onclick="onSubmit()">submit</button>
+<div id="sign"></div>
+<div id="image"></div>
+    <div id="birthday"></div>
+</div>
 </body>
 </html>
